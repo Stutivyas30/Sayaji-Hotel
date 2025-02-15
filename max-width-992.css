@@ -1,0 +1,33 @@
+@media (max-width: 992px) {
+    .about-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 5%;
+        gap: 30px;
+    }
+
+    .image-container {
+        margin-top: 20px;
+    }
+
+      .features {
+        flex-direction: column;
+    }
+    
+    .feature-box {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .hotel-location {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .map-container iframe {
+        height:250px;
+        width: 100%;
+        
+    }
+    
+}

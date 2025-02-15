@@ -1,0 +1,644 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background-image: url(img/carousel6.webp);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.navigation nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background-color: #3a3b54;
+    width: 100%;
+}
+
+.navigation img {
+    height: 60px;
+    width: auto;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline-block;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.nav-buttons button {
+    background-color: transparent;
+    color: white;
+    padding: 10px 15px;
+    border: 1px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Hamburger menu */
+.hamburger {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Booking Info Section */
+.booking-info {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 30%;
+    gap: 20px;
+    color: white;
+    background-color: #45352ab8;
+    border-radius: 10px;
+    width: fit-content;
+    padding: 15px;
+}
+
+.booking-content{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+/* =========Hero-Section=========== */
+
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 10%;
+    gap: 10%;
+    background-color: #fcefe7;
+    background-image: url(/img/galleryPatternTopLeft.webp);
+    
+}
+
+.content {
+    flex: 1;
+}
+
+.content h4 {
+    font-style: italic;
+    font-size: 20px;
+    font-weight: 200;
+    word-spacing: 5px;
+    color: #6d5c55;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.line {
+    width: 100px;
+    height: 2px;
+    background-color: #d89c7c;
+    margin: 0 auto;
+}
+
+.content h1 {
+    font-size: 36px;
+    font-weight: 200;
+    color: #61534e;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.content p {
+    font-size: 17px;
+    color: #61534e;
+    word-spacing: 5px;
+    margin-bottom: 15px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.about-section .content .hero-btn{
+    display: flex;
+    justify-content: center;
+}
+
+.about-section .hero-btn .btn {
+    background-color: transparent;
+    border: 1px solid #d89c7c;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #3d2e2a;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    
+    
+}
+
+.about-section .hero-btn .btn:hover {
+    background-color: #d89c7c;
+    color: white;
+}
+
+.image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container img {
+    width: 100%;
+    /* max-width: 500px; */
+    border-radius: 10px;
+    
+}
+
+
+/* =======Experience-section========= */
+
+.excellence-section {
+    text-align: center;
+    padding: 60px 10%;
+    background-color: #fcefe7a0;
+}
+
+.text-content h2 {
+    font-size: 32px;
+    color: #61534e;
+    font-weight: 200;
+}
+
+.line {
+    width: 60px;
+    height: 2px;
+    background-color: #d89c7c;
+    margin: 10px auto;
+}
+
+.text-content p {
+    font-size: 16px;
+    color: #5e4a45;
+    margin-top: 10px;
+}
+
+.features {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    gap: 20px;
+}
+
+.feature-box {
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.experience-img{
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.experience-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* Hover effect: Zoom-in & shadow */
+.experience-img img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.feature-box h3 {
+    font-size: 30px;
+    width: 100%;
+    color: #61534e;
+    font-weight: 300;
+    margin-top: 15px;
+}
+
+.feature-box p {
+    font-size: 17px;
+    color: #5e4a45;
+    margin-top: 10px;
+    word-spacing: 8px;
+}
+
+/* ===========CULINARY JOURNEY=============== */
+.culinary-journey {
+    text-align: center;
+    background-color: #fcefe7;
+    background-image: url(/img/galleryPatternRight.webp);
+    padding: 50px 20px; /* Add padding for mobile */
+}
+
+.culinary-journey h1 {
+    font-size: 40px;
+    margin-bottom: 30px;
+    font-weight: 200;
+    letter-spacing: 2px;
+    color: #61534e;
+}
+
+/* Grid Layout */
+.restaurant-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Space between cards */
+    width: 100%; /* More flexible width */
+    /* max-width: 1200px; */
+    margin: 0 auto;
+}
+
+/* Restaurant Card */
+.restaurant-card {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: left;
+    width: 100%; 
+    /* max-width: 400px;  */
+    transition: transform 0.3s ease-in-out;
+}
+
+.restaurant-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Image */
+.restaurant-card img {
+    width: 100%;
+    /* display: block; */
+}
+
+/* Text Styling */
+.restaurant-card h2 {
+    font-weight: 600;
+    margin-top: 20px;
+    margin-left: 25px;
+    margin-bottom: 10px;
+    color: #6a5d58;
+}
+
+.restaurant-card p {
+    word-spacing: 2px;
+    margin: 25px;
+    color: #666;
+    font-size: 17px;
+}
+
+.restaurant-card hr{
+    width: 20%;
+    height: 2px;
+    margin-left: 30px;
+    background-color: #fbc4ab;
+    
+}
+
+/* RESPONSIVENESS */
+
+/* Tablet View */
+@media (min-width: 600px) {
+    .restaurant-grid {
+        justify-content: space-between;
+    }
+    .restaurant-card {
+        width: 45%;
+    }
+}
+
+/* Desktop View */
+@media (min-width: 1024px) {
+    .restaurant-grid {
+        justify-content: center;
+    }
+    .restaurant-card {
+        width: 30%;
+    }
+}
+
+/* ======================= */
+
+
+.whispers-of-elegance{
+    background-image: url(/img/eventBg.webp);
+    height: 40vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .whispers-of-elegance:hover{
+    filter: grayscale(40%);
+  }
+
+  .whispers-of-elegance hr{
+    margin: 0 auto;
+    width: 50px;
+  }
+
+
+  .whispers-of-elegance h1{
+    color: white;
+    padding-top: 30px;
+    font-weight: 100;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    
+  }
+
+  .whispers-of-elegance p{
+   margin-top: 20px;
+   color: white;
+   text-align: center;
+   font-size: 20px;
+   width: 100%;
+   padding: 0px 40px;
+  }
+
+  /* --------carousel--------- */
+
+.container{
+    margin-top: 2%;
+    background-image: url(/img/galleryPatternTopLeft.webp);
+    padding-bottom: 10%;
+
+}
+.carousel-inner{
+    margin-top: 30px;
+    height: 80vh;
+    width: 100%;
+    object-fit: cover;
+    background-position: center;
+}
+.carousel-inner img{
+   object-fit: cover;
+   height: 100%;
+   width: 100%;
+}
+
+.container h1{
+    text-align: center;
+    font-size: 40px;
+    font-style: italic;
+    margin-bottom: 5%;
+    color: #61534e;
+}
+
+/* -------Location---------- */
+
+.hotel-location {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 20px;
+    background-color: #fcf8f5;
+    margin-top: 5%;
+    padding-top: 10%;
+    padding-bottom: 5%;
+}
+
+.map-container {
+    flex: 1;
+    min-width: 350px;
+}
+
+.hotel-location .details-container {
+    flex: 1;
+    min-width: 350px;
+    padding: 20px;
+    text-align: center;
+}
+
+.hotel-location h2 {
+    font-size: 30px;
+    font-weight: 200;
+    font-family: 'Times New Roman', Times, serif;
+    word-spacing: 10px;
+    margin-bottom: 2%;
+    color: #4a4a4a;
+}
+
+.hotel-location hr{
+    background-color: #d89c7c;
+    height: 2px;
+    width: 20%;
+    margin: 0 auto;
+    margin-bottom: 5%;
+}
+.hotel-location p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.hotel-location .reserve-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 15px 0;
+    text-decoration: none;
+    font-weight: bold;
+    color: #4a4a4a;
+    border: 2px solid black;
+    transition: 0.3s;
+}
+
+.hotel-location .reserve-btn:hover {
+    background-color: #d89c7c;
+    color: white;
+}
+
+.hotel-location  .contact-info {
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.hotel-location .contact-info a {
+    color: #0073e6;
+    text-decoration: none;
+}
+
+.hotel-location .contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* ==========Footer=========== */
+
+
+footer {
+    padding: 40px 20px;
+    color: white;
+    background-color: #111;
+    
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* max-width: 1200px; */
+    margin: auto;
+}
+
+.footer-container img{
+    width: 50%;
+}
+
+.footer-logo {
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+}
+
+.footer-links, .footer-services, .footer-newsletter {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+
+h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+ul li a:hover {
+    color: white;
+}
+
+.footer-newsletter form {
+    display: flex;
+    margin-top: 10px;
+}
+
+.footer-newsletter input {
+    padding: 8px;
+    width: 70%;
+    border: none;
+    border-radius: 5px 0 0 5px;
+}
+
+.footer-newsletter button {
+    padding: 8px;
+    border: none;
+    background: #e67e22;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+}
+
+.footer-bottom {
+    margin-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    padding-top: 5%;
+}
+
+.footer-socials a i {
+    color: white;
+    margin: 0 5px;
+    font-size: 20px;
+    border-radius: 50%;
+    text-decoration: none;
+}
+
+.footer-socials a i:hover {
+    color: #d89c7c;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-newsletter form {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-newsletter input {
+        width: 50%;
+        border-radius: 5px;
+    
+        
+    }
+
+    .footer-newsletter button {
+        width: 50%;
+        border-radius: 5px;
+        margin-top: 10px;
+       
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-container img{
+        width: 30%;
+    }
+}
+
+
+
+
+
+
+

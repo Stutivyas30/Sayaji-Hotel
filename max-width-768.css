@@ -1,0 +1,76 @@
+@media screen and (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #3a3b54;
+        text-align: center;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-links li {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .nav-buttons {
+        display: none;
+    }
+
+    .booking-info{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .booking-info .booking-content{
+        display: flex;
+        gap: 10px;
+    }
+
+    .booking-info .search-glass{
+        text-align: center;
+        width: 100%;
+        padding: 8px;
+        border: 1px solid transparent;
+        background-color: #52453db1;
+    }
+
+    .content h1 {
+        font-size: 28px;
+    }
+
+    .content p {
+        font-size: 14px;
+    }
+
+    .btn {
+        font-size: 12px;
+        padding: 8px 15px;
+    }
+
+    .whispers-of-elegance{
+        height: fit-content;
+        padding-bottom: 20px;
+    }
+
+    .whispers-of-elegance h1{
+        text-align: center;
+    }
+
+    .carousel-inner{
+        height: fit-content;
+    }
+
+   
+} 
+
