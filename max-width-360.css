@@ -1,7 +1,5 @@
 @media (max-width: 360px) {
-    .map-container iframe {
-        height:250px;
-        width: 50%;
-    }
-    
+     .hotel-location .reserve-btn{
+        padding: 10px 10px;
+     }   
 }
