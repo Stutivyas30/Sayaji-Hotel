@@ -23,11 +23,6 @@
         flex-direction: column;
         text-align: center;
     }
-
-    .map-container iframe {
-        height:250px;
-        width: 100%;
-        
-    }
     
+
 }
