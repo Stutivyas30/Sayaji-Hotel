@@ -39,17 +39,24 @@
 .nav-links a {
     color: white;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 18px;
     padding: 10px;
+    
 }
 
 .nav-buttons button {
     background-color: transparent;
     color: white;
-    padding: 10px 15px;
+    padding: 10px 12px;
+    margin: 5px;
     border: 1px solid white;
     border-radius: 5px;
     cursor: pointer;
+    transition: all ease .50s;
+}
+
+.nav-buttons button:hover{
+    transform: scale(1.1);
 }
 
 /* Hamburger menu */
@@ -78,6 +85,7 @@
 .booking-content{
     display: flex;
     flex-direction: row;
+    align-items: center;
     gap: 5px;
 }
 
@@ -264,25 +272,21 @@
     color: #61534e;
 }
 
-/* Grid Layout */
 .restaurant-grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px; /* Space between cards */
-    width: 100%; /* More flexible width */
-    /* max-width: 1200px; */
+    gap: 20px; 
+    width: 100%; 
     margin: 0 auto;
 }
 
-/* Restaurant Card */
 .restaurant-card {
     background: #fff;
     border-radius: 10px;
     overflow: hidden;
     text-align: left;
     width: 100%; 
-    /* max-width: 400px;  */
     transition: transform 0.3s ease-in-out;
 }
 
@@ -320,12 +324,9 @@
     
 }
 
-/* RESPONSIVENESS */
-
-/* Tablet View */
 @media (min-width: 600px) {
     .restaurant-grid {
-        justify-content: space-between;
+        gap: 20px;
     }
     .restaurant-card {
         width: 45%;
@@ -423,24 +424,23 @@
 .hotel-location {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin: auto;
     padding: 20px;
     background-color: #fcf8f5;
-    margin-top: 5%;
-    padding-top: 10%;
-    padding-bottom: 5%;
 }
 
-.map-container {
-    flex: 1;
-    min-width: 350px;
+
+.hotel-location .map-container iframe{
+    width:600px ;
+    height:450px;
+    padding: 20px;
+    
 }
 
 .hotel-location .details-container {
     flex: 1;
-    min-width: 350px;
     padding: 20px;
     text-align: center;
 }
@@ -452,6 +452,8 @@
     word-spacing: 10px;
     margin-bottom: 2%;
     color: #4a4a4a;
+    width: 100%;
+  
 }
 
 .hotel-location hr{
@@ -465,6 +467,11 @@
     font-size: 16px;
     color: #555;
     line-height: 1.6;
+    width: 100%;
+}
+
+.hotel-location .details-container p em{
+    width: 100%;
 }
 
 .hotel-location .reserve-btn {
@@ -491,6 +498,7 @@
 .hotel-location .contact-info a {
     color: #0073e6;
     text-decoration: none;
+    width: 100%;
 }
 
 .hotel-location .contact-info a:hover {
@@ -599,42 +607,7 @@ ul li a:hover {
     color: #d89c7c;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-    .footer-container {
-        flex-direction: column;
-        text-align: center;
-    }
 
-    .footer-newsletter form {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .footer-newsletter input {
-        width: 50%;
-        border-radius: 5px;
-    
-        
-    }
-
-    .footer-newsletter button {
-        width: 50%;
-        border-radius: 5px;
-        margin-top: 10px;
-       
-    }
-
-    .footer-bottom {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .footer-container img{
-        width: 30%;
-    }
-}
 
 
 
